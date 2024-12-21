@@ -1,0 +1,46 @@
+.locations {}
+
+.locations__row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    align-items: flex-start;
+
+    @include mobile {
+        margin-bottom: 20px;
+    }
+}
+
+.locations__title {
+    width: 430px;
+}
+
+
+
+.locations__controls {
+    display: flex;
+    column-gap: 20px;
+
+    @include tablet {
+        column-gap: 10px;
+
+        & img {
+            width: 42px;
+        }
+    }
+
+    @include mobile {
+        display: none;
+    }
+
+    &--mobile {
+        display: none;
+        margin-top: 20px;
+
+        @include mobile {
+            display: flex;
+            column-gap: 10px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.faq {}
+
+.faq__wrapper {
+    display: flex;
+    column-gap: 30px;
+    justify-content: space-between;
+
+    @include tablet {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    @include mobile {
+        row-gap: 20px;
+        
+    }
+}
+
+.faq__title {
+    width: 470px;
+    flex-shrink: 0;
+
+    @include tablet {
+        width: auto;;
+    }
+}
+
+.faq__topics {
+    width: 670px;
+    flex-shrink: 0;
+
+    @include tablet {
+        width: auto;
+    }
+
+    @include mobile {
+        width: 330px;
+    }
+}

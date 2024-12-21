@@ -1,0 +1,35 @@
+.header {
+    padding: 40px 0;
+}
+
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    column-gap: 30px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center; 
+    flex-shrink: 0;
+
+    @include mobile {
+        width: 118px;
+    }
+}
+
+.header_nav {
+    @include mobile {
+        display: none;
+    }
+}
+
+.header__nav-btn {
+    display: none;
+
+    @include mobile {
+        display: block;
+    }
+}
